@@ -7,7 +7,7 @@ define(function(require, exports, module) {
     var _brand = require("../view/brand_list.html");
     var _brandFn = _.template(_brand);
     $.ajax({
-        url: "../json/brand_list.json",
+        url: "json/brand_list.json",
         success: function(res) {
             var data = res.data;
             //console.log(data);
